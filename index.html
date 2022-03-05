@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Viagens e Turismo</title>
+</head>
+<body>
+
+    <header>
+        <div id="title">
+            <h1>VIA<span>GENS</span></h1>
+            <h1><span>TURI</span>SMO</h1> 
+        </div>
+
+        <ul>
+            <a href="#"><li>Inicio</li></a>
+            <a href="#" onclick="servicos()" class="btn"><li>Serviços</li></a>
+            <a href="#" onclick="sobre()" class="btn"><li>Sobre</li></a>
+            <a href="#" onclick="contato()" class="btn"><li>Contato</li></a>
+            <a href="#" id="inscreva-se-btn" ><li>Criar uma conta</li></a>
+        </ul>
+    </header>
+
+    <main>
+        
+        <div class="modal">
+            <div onclick="fechar()" class="fechar">X</div>
+            <h4>
+                TIM - (41) 3151-6474 <br>
+                WHATSAPP - (41) 9154-5808 <br>
+                E-MAIL:  teste@tviagensturismo.com.br<br>
+                SITE : www.viagensturismo.com.br<br>
+                Av. Nossa Senhora da Penha, 21 <br>
+                PENHA – RIO DE JANEIRO – RJ
+            </h4>
+        </div>
+
+        <div class="modal2">
+            <div onclick="fechar2()" class="fechar">X</div>
+            <h4 class="h4servicos">  Reservas de passagens aéreas, confirmação, compra e emissão dos bilhetes nacionais e internacionais;
+                Informações e esclarecimentos sobre as tarifas aéreas nacionais e Internacionais;
+                Pré-orçamento e cotação de pacotes de viagens;
+                Planejamento, organização e execução do itinerário ou programa de viagens personalizados, individuais ou em grupo;
+                Venda direta de pacotes de viagens;
+                Planejamento de programas de viagens corporativas – viagens em grupo para empresas;
+                Planejamento de programas de viagens de lazer e de incentivo;
+                Serviços de orientação para obtenção de vistos consulares, permissões especiais, passaportes, documentação e vacinas exigidas para viagens para destinos específicos;
+                Orientação sobre franquia de bagagem e taxas aeroportuárias;
+                Procedimentos alfandegários e auxílio/esclarecimento sobre entrevistas consulares;
+                Reservas de meios de hospedagem;</h4> 
+        </div>
+
+        <div class="modal3">
+            <div onclick="fechar3()" class="fechar">X</div>
+            <h4 class="h4sobre"> A VIAGENS.TURISMO 
+                 desde o primeiro contato elabora o estudo de gastos de viagens e oferece ao cliente a solução ideal para a redução
+                 imediata em viagens. O acompanhamento da movimentação de gastos é sistêmico portanto o executivo e 
+                 consultores tem o compromisso de buscar a todo momento a melhor oferta e soluções para redução de 
+                 gastos em viagens corporativas.
+                 Durante 15 anos de trabalhos voltados ao Turismo,
+                identificamos uma necessidade no mercado através de uma assessoria efetiva, 
+                personalizando a viagem às características do cliente e buscando sempre uma otimização nos gastos, 
+                indicando a opção mais em conta para a viagem dos sonhos. Por conta disso, a ViagensTurismo oferece aos seus clientes: </h4> 
+        </div>
+
+    
+        <aside>
+            <h2><span>INSCREVA-SE</span></h2>
+            <h2>NA VIAGENS.TURISMO</h2>
+            <h3>E FIQUE POR DENTRO DAS NOVIDADES...</h3>
+            <p>Só quem ama viajar sabe o que é ter um espírito viajante que nos impulsiona a sempre buscar novas aventuras. As viagens enchem nossa vida de histórias, cultura e momentos inesquecíveis.</p>
+            <form>
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <input class="enviar" type="submit" value="Enviar">
+        </form>    
+        </aside>
+        <article>
+            <img src="img/pngwing.com (2).png" alt="imagem" >
+        </article>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
