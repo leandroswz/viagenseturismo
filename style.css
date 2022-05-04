@@ -2,101 +2,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-body{
-    background-color: rgb(34,34,34);
+body {
+    background-color: rgb(34, 34, 34);
     color: white;
     font-family: verdana;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px ;
+    padding: 15px;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-#title{
+#title {
     flex-direction: column;
-    line-height: 10px ;
+    line-height: 10px;
 }
-li{
+
+li {
     display: inline-block;
     margin: 20px;
 }
-a{
-    color:white;
-}
-a:hover{
-   color: rgb(21, 201, 132);
-   transition: 0.3s all;
+
+a {
+    color: white;
 }
 
-#inscreva-se-btn{
-    border: 2px solid rgb(21, 201, 132) ;
+a:hover {
+    color: rgb(21, 201, 132);
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn {
+    border: 2px solid rgb(21, 201, 132);
     padding: 10px;
     border-radius: 10px;
 }
-#inscreva-se-btn:hover{
-    background-color:rgb(21, 201, 132) ;
-    color:black;
+
+#inscreva-se-btn:hover {
+    background-color: rgb(21, 201, 132);
+    color: black;
 }
 
-h1{
+h1 {
     font-weight: 200;
     font-family: 'Fredoka One', cursive;
-    cursor:pointer ;
+    cursor: pointer;
 }
-main{
+
+main {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
-h2{
+
+h2 {
     font-size: 56px;
-    line-height:10px ;
+    line-height: 10px;
     font-family: arial;
 }
-span{
-    color:rgb(21, 201, 132);
+
+span {
+    color: rgb(21, 201, 132);
 }
-h3{
+
+h3 {
     margin-top: -20px;
     margin-bottom: 50px;
-    color:#4c4a4a;
-    
-
+    color: #4c4a4a;
 }
-p{
+
+p {
     line-height: 20px;
     max-width: 500px;
     font-family: 'Titillium Web', sans-serif;
 }
-img{
+
+img {
     width: 500px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
-form [type="submit"]{
+
+form [type="submit"] {
     height: 50px;
     width: 50%;
-    background-color:rgb(21, 201, 132) ;
+    background-color: rgb(21, 201, 132);
     color: white;
     font-weight: bold;
 }
-form [type="submit"]:hover{
+
+form [type="submit"]:hover {
     cursor: pointer;
 }
 
-
-input{
+input {
     margin-top: 20px;
     height: 20px;
     padding: 15px;
@@ -104,28 +112,35 @@ input{
     border: none;
     font-size: 15px;
 }
-.modal,.modal2,.modal3{
+
+.modal,
+.modal2,
+.modal3 {
     width: 430px;
     height: 400px;
     background: rgb(0, 0, 0);
-    border:2px solid rgb(21, 201, 132);
-    border-radius:0px 20px 0px 20px;
-    position:absolute;
-    top:50%;
+    border: 2px solid rgb(21, 201, 132);
+    border-radius: 0px 20px 0px 20px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: none;
-    animation: animate; 
+    animation: animate;
     animation-duration: 800ms;
     padding: 10px 10px 10px 10px;
 }
 
-
-@keyframes animate{
-    from{opacity:1;}
-    from{opacity:0;}
+@keyframes animate {
+    from {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
 }
-.fechar{
+
+.fechar {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -135,78 +150,116 @@ input{
     margin-right: -18px;
     margin-top: -4px;
 }
-h4{
-    text-align:  center;
-    color:rgb(252, 246, 246);
+
+h4 {
+    text-align: center;
+    color: rgb(252, 246, 246);
     font-size: 23px;
     width: 0 auto;
     margin-top: 80px;
     font-family: 'League Gothic', sans-serif;
-    font-weight:80;
+    font-weight: 80;
     margin-top: 120px;
 }
-.h4sobre{
-    text-align:  left;
-    color:rgb(252, 246, 246);
+
+.h4sobre {
+    text-align: left;
+    color: rgb(252, 246, 246);
     font-size: 23px;
     width: 0 auto;
     margin-top: 50px;
     font-family: 'League Gothic', sans-serif;
-    font-weight:80;
+    font-weight: 80;
 }
-.h4servicos{
-    text-align:  left;
-    color:rgb(252, 246, 246);
+
+.h4servicos {
+    text-align: left;
+    color: rgb(252, 246, 246);
     font-size: 23px;
     margin: 0 auto;
     margin-top: 10px;
     font-family: 'League Gothic', sans-serif;
-    font-weight:80;
+    font-weight: 80;
     padding: 10px;
 }
- 
 
-@media screen and (max-width: 760px){
+.btnMobile {
+    display: none;
+}
 
-    header{
+@media screen and (max-width: 760px) {
+    header {
+        flex-direction: column;
+        position: relative;
+    }
+    main {
         flex-direction: column;
     }
-    main{
-        flex-direction: column;
-    }
-    aside{
+    aside {
         padding-top: 20px;
         margin-top: -30px;
     }
-    h2{
+    h2 {
         font-size: 35px;
         text-align: center;
     }
-    p{
+    p {
         text-align: center;
     }
-    form{
-        margin: 0 auto; 
+    form {
+        margin: 0 auto;
         width: 100%;
     }
-    input{
-        align-self: center ;   
+    input {
+        align-self: center;
     }
-    img{
+    img {
         display: none;
     }
-    ul{
-        text-align: center;
-        margin-left: -35px;
+    .btnMobile {
+        display: flex;
     }
-    h3{
+    button {
+        background: none;
+        color: rgb(21, 201, 132);
+        font-size: 28px;
+        border: none;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+    }
+    ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        background-color: rgb(34, 34, 34);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: 40px;
+        margin: 0 !important;
+    }
+    ul.active {
+        display: flex;
+        animation: toLeft 0.4s ease 0s 1 normal forwards;
+    }
+    @keyframes toLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    h3 {
         font-size: 15px;
         text-align: center;
     }
-    form [type="submit"]{
+    form [type="submit"] {
         width: 25%;
     }
-
-
 }
-
